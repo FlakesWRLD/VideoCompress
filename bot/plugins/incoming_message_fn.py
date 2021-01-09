@@ -113,7 +113,7 @@ async def incoming_compress_message_f(bot, update):
               reply_markup=InlineKeyboardMarkup(
                   [
                       [
-                          InlineKeyboardButton("Join Updates Channel 🙎", url=f"https://t.me/{update_channel}")
+                          InlineKeyboardButton("Join Our Updates Channel 📢", url=f"https://t.me/{update_channel}")
                       ]
                   ]
               ),
