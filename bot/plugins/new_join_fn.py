@@ -33,22 +33,31 @@ async def help_message_f(client, message):
         try:
             user = await client.get_chat_member(update_channel, message.chat.id)
             if user.status == "kicked":
-               await message.reply_text("Sorry Sir, You Are Banned From Using Me. Contact My [Support Bot](https://t.me/FlixHelpBot).", parse_mode="markdown")
+               await message.reply_text(
+                   text="Sorry Sir, You Are Banned From Using Me. Contact My [Support Bot](https://t.me/FlixHelpBot).",
+                   parse_mode="markdown",
+                   disable_web_page_preview=True
+               )
                return
         except UserNotParticipant:
             await message.reply_text(
-                text="**Please Join My Updates Channel To Use This Bot!**",
+                text="**Please Join My Updates Channel Below To Use This Bot!**",
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
                             InlineKeyboardButton("Join Our Updates Channel 📢", url=f"https://t.me/{update_channel}")
                         ]
                     ]
-                )
+                ),
+                parse_mode="markdown"
             )
             return
         except Exception:
-            await message.reply_text("Something Went Wrong. Contact my [Support Bot](https://t.me/FlixHelpBot).", parse_mode="markdown")
+            await message.reply_text(
+                text="Something Went Wrong. Contact My [Support Bot](https://t.me/FlixHelpBot).",
+                parse_mode="markdown",
+                disable_web_page_preview=True
+            )
             return
     ## Force Sub ##
     await message.reply_text(
