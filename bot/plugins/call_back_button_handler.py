@@ -58,7 +58,7 @@ async def button(bot, update: CallbackQuery):
                         await update.message.edit_text("🚦🚦 Last Process Stopped 🚦🚦")
                         chat_id = LOG_CHANNEL
                         now = datetime.datetime.now()
-                        await bot.send_message(chat_id, f"**Last Process Cancelled ❌**\n\n**Bot Status : Free  🟢**\n\n➤ @CompressFlixBot\n\n**Process Stopped At** `{now}`", parse_mode="markdown")
+                        await bot.send_message(chat_id, f"**Last Process Cancelled ❌**\n\n**Bot Status : Free  🟢**\n\n➤ @FlixCompressBot\n\n**Process Stopped At** `{now}`", parse_mode="markdown")
                     except:
                         pass
             else:
