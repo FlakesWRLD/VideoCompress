@@ -5,7 +5,7 @@ from bot.get_cfg import get_config
 
 
 class Localisation:
-    START_TEXT = "<b>Hello, My Name Is 𝗖𝗢𝗠𝗣𝗥𝗘𝗦𝗦 𝗙𝗟𝗜𝗫 𝗥𝗢𝗕𝗢𝗧 🥳.\n\nI'm A <u>𝗩𝗜𝗗𝗘𝗢 𝗖𝗢𝗠𝗣𝗥𝗘𝗦𝗦𝗢𝗥 𝗕𝗢𝗧</u>\n\nSend Me Any 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗩𝗶𝗱𝗲𝗼 Be It 𝗗𝗼𝗰𝘂𝗺𝗲𝗻𝘁/𝗦𝘁𝗿𝗲𝗮𝗺𝗮𝗯𝗹𝗲 & I'll 𝗖𝗼𝗺𝗽𝗿𝗲𝘀𝘀 It & Resend You A Smaller Packed Size. \n\nSee /help For More Information\n\n❌ 𝗬𝗢𝗨 𝗖𝗔𝗡 𝗢𝗡𝗟𝗬 𝗣𝗘𝗥𝗙𝗢𝗥𝗠 <u>𝗢𝗡𝗘 𝗢𝗣𝗘𝗥𝗔𝗧𝗜𝗢𝗡</u> 𝗧𝗢 𝗔𝗩𝗢𝗜𝗗 𝗕𝗢𝗧 𝗢𝗩𝗘𝗥𝗟𝗢𝗔𝗗.\n\n𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 𝗧𝗼 @FlixBots 𝗙𝗼𝗿 𝗠𝗼𝗿𝗲 𝗘𝘅𝗰𝗶𝘁𝗶𝗻𝗴 𝗕𝗼𝘁𝘀</b>"
+    START_TEXT = "<b>Hello, My Name Is 𝗙𝗟𝗜𝗫 𝗖𝗢𝗠𝗣𝗥𝗘𝗦𝗦 𝗕𝗢𝗧 🥳.\n\nI'm A <u>𝗩𝗜𝗗𝗘𝗢 𝗖𝗢𝗠𝗣𝗥𝗘𝗦𝗦𝗢𝗥 𝗕𝗢𝗧</u>\n\nSend Me Any 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗩𝗶𝗱𝗲𝗼 Be It 𝗗𝗼𝗰𝘂𝗺𝗲𝗻𝘁/𝗦𝘁𝗿𝗲𝗮𝗺𝗮𝗯𝗹𝗲 & I'll 𝗖𝗼𝗺𝗽𝗿𝗲𝘀𝘀 It & Resend You A Smaller Packed Size. \n\nSee /help For More Information\n\n❌ 𝗬𝗢𝗨 𝗖𝗔𝗡 𝗢𝗡𝗟𝗬 𝗣𝗘𝗥𝗙𝗢𝗥𝗠 <u>𝗢𝗡𝗘 𝗢𝗣𝗘𝗥𝗔𝗧𝗜𝗢𝗡</u> 𝗧𝗢 𝗔𝗩𝗢𝗜𝗗 𝗕𝗢𝗧 𝗢𝗩𝗘𝗥𝗟𝗢𝗔𝗗.\n\n𝗦𝘂𝗯𝘀𝗰𝗿𝗶𝗯𝗲 𝗧𝗼 @FlixBots 𝗙𝗼𝗿 𝗠𝗼𝗿𝗲 𝗘𝘅𝗰𝗶𝘁𝗶𝗻𝗴 𝗕𝗼𝘁𝘀</b>"
     ABS_TEXT = "Please Don't Be Selfish."
     
     FORMAT_SELECTION = "Select The Desired Format: <a href='{}'>file size might be approximate</a> \nIf You Want To Set Custom Thumbnail, Send A Photo Before Or Quickly After Tapping On Any Of The Below Buttons.\nYou Can Use /deletethumbnail To Delete The Auto-Generated Thumbnail."
