@@ -173,7 +173,7 @@ async def incoming_compress_message_f(bot, update):
     )
     chat_id = LOG_CHANNEL
     now = datetime.datetime.now()
-    await bot.send_message(chat_id, f"**Video Compressing Started\n\nBot Status : Busy Now  🔴**\n\n➤ @FlixCompressBot\n\n**A Process Started At** `{now}`", parse_mode="markdown")
+    await bot.send_message(chat_id, f"**Video Compressing Started\n\nBot Status : Busy Now  🔴**\n\n➤ @CompressFlixRobot\n\n**A Process Started At** `{now}`", parse_mode="markdown")
     try:
       d_start = time.time()
       status = DOWNLOAD_LOCATION + "/status.json"
@@ -203,7 +203,7 @@ async def incoming_compress_message_f(bot, update):
           )
           chat_id = LOG_CHANNEL
           now = datetime.datetime.now()
-          await bot.send_message(chat_id, f"**Download Stopped ❌\n\nBot Status : Free  🟢**\n\n➤ @FlixCompressBot\n\n**Process Stopped At** `{now}`", parse_mode="markdown")
+          await bot.send_message(chat_id, f"**Download Stopped ❌\n\nBot Status : Free  🟢**\n\n➤ @CompressFlixRobot\n\n**Process Stopped At** `{now}`", parse_mode="markdown")
         except:
           pass
         delete_downloads()
@@ -251,7 +251,7 @@ async def incoming_compress_message_f(bot, update):
         )
         chat_id = LOG_CHANNEL
         now = datetime.datetime.now()
-        await bot.send_message(chat_id, f"**Download Failed ❌**\n\n**Bot Status : Free  🟢**\n\n➤ @FlixCompressBot\n\n**Process Stopped At** `{now}`", parse_mode="markdown")
+        await bot.send_message(chat_id, f"**Download Failed ❌**\n\n**Bot Status : Free  🟢**\n\n➤ @CompressFlixRobot\n\n**Process Stopped At** `{now}`", parse_mode="markdown")
       except:
           pass          
       delete_downloads()
@@ -307,7 +307,7 @@ async def incoming_compress_message_f(bot, update):
           )
           chat_id = LOG_CHANNEL
           now = datetime.datetime.now()
-          await bot.send_message(chat_id, f"**Upload Stopped ❌**\n\n**Bot Status : Free  🟢**\n\n➤ @FlixCompressBot\n\n**Process Stopped At** `{now}`", parse_mode="markdown")
+          await bot.send_message(chat_id, f"**Upload Stopped ❌**\n\n**Bot Status : Free  🟢**\n\n➤ @CompressFlixRobot\n\n**Process Stopped At** `{now}`", parse_mode="markdown")
         except:
           pass
         delete_downloads()
@@ -317,7 +317,7 @@ async def incoming_compress_message_f(bot, update):
       delete_downloads()
       chat_id = LOG_CHANNEL
       now = datetime.datetime.now()
-      await bot.send_message(chat_id, f"**Uploaded Successfully 🎦**\n\n**Bot Status : Free  🟢**\n\n➤ @FlixCompressBot\n\n**Process Done At** `{now}`", parse_mode="markdown")
+      await bot.send_message(chat_id, f"**Uploaded Successfully 🎦**\n\n**Bot Status : Free  🟢**\n\n➤ @CompressFlixRobot\n\n**Process Done At** `{now}`", parse_mode="markdown")
       LOGGER.info(upload.caption);
       try:
         await upload.edit_caption(
@@ -333,7 +333,7 @@ async def incoming_compress_message_f(bot, update):
         )
         chat_id = LOG_CHANNEL
         now = datetime.datetime.now()
-        await bot.send_message(chat_id, f"**Compression Failed 📀**\n\n**Bot Status : Free  🟢**\n\n➤ @FlixCompressBot\n\n**Process Stopped At** `{now}`", parse_mode="markdown")
+        await bot.send_message(chat_id, f"**Compression Failed 📀**\n\n**Bot Status : Free  🟢**\n\n➤ @CompressFlixRobot\n\n**Process Stopped At** `{now}`", parse_mode="markdown")
       except:
         pass
       
@@ -369,7 +369,7 @@ async def incoming_cancel_message_f(bot, update):
     await update.reply_text("Are you sure? 🚫 This will stop the compression!", reply_markup=reply_markup, quote=True)
     #chat_id = LOG_CHANNEL
     #now = datetime.datetime.now()
-    #await bot.send_message(chat_id, f"**Last Process Cancelled ❌**\n\n**Bot Status : Free  🟢**\n\n➤ @FlixCompressBot\n\n**Process Stopped At** `{now}`", parse_mode="markdown")
+    #await bot.send_message(chat_id, f"**Last Process Cancelled ❌**\n\n**Bot Status : Free  🟢**\n\n➤ @CompressFlixRobot\n\n**Process Stopped At** `{now}`", parse_mode="markdown")
   else:
     delete_downloads()
     await bot.send_message(
