@@ -3,5 +3,4 @@ Pillow
 psutil
 hachoir
 tgcrypto
-git+git://github.com/mahesh0253/pyrogram@asyncio#pyrogram
 pyrogram
