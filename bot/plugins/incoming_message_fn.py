@@ -345,7 +345,7 @@ async def incoming_compress_message_f(bot, update):
       )
       chat_id = LOG_CHANNEL
       now = datetime.datetime.now()
-      await bot.send_message(chat_id, f"**Download Error ‼️**\n\n**Bot Status : Free  🟢**\n\n➤ @FlixCompressBot\n\n**Process Stopped At** `{now}`", parse_mode="markdown")
+      await bot.send_message(chat_id, f"**Download Error ‼️**\n\n**Bot Status : Free  🟢**\n\n➤ @CompressFlixRoBot\n\n**Process Stopped At** `{now}`", parse_mode="markdown")
     except:
       pass
     
