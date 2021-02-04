@@ -177,7 +177,7 @@ async def incoming_compress_message_f(bot, update):
     ist = ist_now.strftime("%d/%m/%Y, %H:%M:%S")
     bst_now = utc_now + datetime.timedelta(minutes=00, hours=6)
     bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
-    now = f"\n{ist} (GMT+05:30)
+    now = f"\n{ist} (GMT+05:30)`\n`{bst} (GMT+06:00)"
     await bot.send_message(chat_id, f"**Video Compressing Started\n\nBot Status : Busy Now  🔴**\n\n➤ @FlixCompressBot\n\n**A Process Started At** `{now}`", parse_mode="markdown")
     try:
       d_start = time.time()
@@ -212,7 +212,7 @@ async def incoming_compress_message_f(bot, update):
           ist = ist_now.strftime("%d/%m/%Y, %H:%M:%S")
           bst_now = utc_now + datetime.timedelta(minutes=00, hours=6)
           bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
-          now = f"\n{ist} (GMT+05:30)
+          now = f"\n{ist} (GMT+05:30)`\n`{bst} (GMT+06:00)"
           await bot.send_message(chat_id, f"**Download Stopped ❌\n\nBot Status : Free  🟢**\n\n➤ @FlixCompressBot\n\n**Process Stopped At** `{now}`", parse_mode="markdown")
         except:
           pass
@@ -265,7 +265,7 @@ async def incoming_compress_message_f(bot, update):
         ist = ist_now.strftime("%d/%m/%Y, %H:%M:%S")
         bst_now = utc_now + datetime.timedelta(minutes=00, hours=6)
         bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
-        now = f"\n{ist} (GMT+05:30)
+        now = f"\n{ist} (GMT+05:30)`\n`{bst} (GMT+06:00)"
         await bot.send_message(chat_id, f"**Download Failed ❌**\n\n**Bot Status : Free  🟢**\n\n➤ @FlixCompressBot\n\n**Process Stopped At** `{now}`", parse_mode="markdown")
       except:
           pass          
@@ -321,7 +321,12 @@ async def incoming_compress_message_f(bot, update):
             text="Upload stopped"
           )
           chat_id = LOG_CHANNEL
-          now = datetime.datetime.now()
+          utc_now = datetime.datetime.utcnow()
+          ist_now = utc_now + datetime.timedelta(minutes=30, hours=5)
+          ist = ist_now.strftime("%d/%m/%Y, %H:%M:%S")
+          bst_now = utc_now + datetime.timedelta(minutes=00, hours=6)
+          bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
+          now = f"\n{ist} (GMT+05:30)`\n`{bst} (GMT+06:00)"
           await bot.send_message(chat_id, f"**Upload Stopped ❌**\n\n**Bot Status : Free  🟢**\n\n➤ @FlixCompressBot\n\n**Process Stopped At** `{now}`", parse_mode="markdown")
         except:
           pass
@@ -336,7 +341,7 @@ async def incoming_compress_message_f(bot, update):
       ist = ist_now.strftime("%d/%m/%Y, %H:%M:%S")
       bst_now = utc_now + datetime.timedelta(minutes=00, hours=6)
       bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
-      now = f"\n{ist} (GMT+05:30)
+      now = f"\n{ist} (GMT+05:30)`\n`{bst} (GMT+06:00)"
       await bot.send_message(chat_id, f"**Uploaded Successfully 🎦**\n\n**Bot Status : Free  🟢**\n\n➤ @FlixCompressBot\n\n**Process Done At** `{now}`", parse_mode="markdown")
       LOGGER.info(upload.caption);
       try:
@@ -357,7 +362,7 @@ async def incoming_compress_message_f(bot, update):
         ist = ist_now.strftime("%d/%m/%Y, %H:%M:%S")
         bst_now = utc_now + datetime.timedelta(minutes=00, hours=6)
         bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
-        now = f"\n{ist} (GMT+05:30)
+        now = f"\n{ist} (GMT+05:30)`\n`{bst} (GMT+06:00)"
         await bot.send_message(chat_id, f"**Compression Failed 📀**\n\n**Bot Status : Free  🟢**\n\n➤ @FlixCompressBot\n\n**Process Stopped At** `{now}`", parse_mode="markdown")
       except:
         pass
@@ -374,7 +379,7 @@ async def incoming_compress_message_f(bot, update):
       ist = ist_now.strftime("%d/%m/%Y, %H:%M:%S")
       bst_now = utc_now + datetime.timedelta(minutes=00, hours=6)
       bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
-      now = f"\n{ist} (GMT+05:30)
+      now = f"\n{ist} (GMT+05:30)`\n`{bst} (GMT+06:00)"
       await bot.send_message(chat_id, f"**Download Error ‼️**\n\n**Bot Status : Free  🟢**\n\n➤ @FlixCompressBot\n\n**Process Stopped At** `{now}`", parse_mode="markdown")
     except:
       pass
