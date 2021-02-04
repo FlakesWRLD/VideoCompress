@@ -57,7 +57,12 @@ async def button(bot, update: CallbackQuery):
                     try:
                         await update.message.edit_text("🚦🚦 Last Process Stopped 🚦🚦")
                         chat_id = LOG_CHANNEL
-                        now = datetime.datetime.now()
+                        utc_now = datetime.datetime.utcnow()
+                        ist_now = utc_now + datetime.timedelta(minutes=30, hours=5)
+                        ist = ist_now.strftime("%d/%m/%Y, %H:%M:%S")
+                        bst_now = utc_now + datetime.timedelta(minutes=00, hours=6)
+                        bst = bst_now.strftime("%d/%m/%Y, %H:%M:%S")
+                        now = f"\n{ist} (GMT+05:30)
                         await bot.send_message(chat_id, f"**Last Process Cancelled ❌**\n\n**Bot Status : Free  🟢**\n\n➤ @CompressFlixRobot\n\n**Process Stopped At** `{now}`", parse_mode="markdown")
                     except:
                         pass
